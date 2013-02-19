@@ -8,29 +8,25 @@ use rtens\collections\Set;
 class Renderer {
 
     /**
-     * @var string
+     * @var mixed
      */
-    private $template;
+    private $model;
 
     /**
      * @var mixed
      */
     private $view;
 
-    /**
-     * @param string $template Input template
-     */
-    public function __construct($template) {
-        $this->template = $template;
+    public function __construct($model) {
+        $this->model = $model;
     }
 
     /**
-     * @param mixed $model object or array containing template data
-     *
+     * @param string $template
      * @return string
      */
-    public function render($model) {
-        return $this->parse($this->template, array($model));
+    public function render($template) {
+        return $this->parse($template, array($this->model));
     }
 
     /**
@@ -75,7 +71,7 @@ class Renderer {
                 if ($end === false) {
                     throw new ParsingException(
                         'No closing tag found for tag ' . $matches[0][0] . ' at pos ' . $pos . ' in template '
-                                . $this->template);
+                                . $content);
                 }
 
                 $inside = substr($after, 0, $end);

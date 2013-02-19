@@ -284,9 +284,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     }
 
     private function whenTheTemplateIsRenderedWithThisView() {
-        $template = new Renderer($this->template);
+        $template = new Renderer($this->view);
         try {
-            $this->output = $template->render($this->view);
+            $this->output = $template->render($this->template);
         } catch (\Exception $e) {
             $this->exception = $e;
         }
