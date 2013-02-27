@@ -8,25 +8,20 @@ use rtens\collections\Set;
 class Renderer {
 
     /**
-     * @var mixed
+     * @var string
      */
-    private $model;
+    private $template;
 
-    /**
-     * @var mixed
-     */
-    private $view;
-
-    public function __construct($model) {
-        $this->model = $model;
+    public function __construct($template) {
+        $this->template = $template;
     }
 
     /**
-     * @param string $template
+     * @param array|object $model
      * @return string
      */
-    public function render($template) {
-        return $this->parse($template, array($this->model));
+    public function render($model) {
+        return $this->parse($this->template, array($model));
     }
 
     /**
