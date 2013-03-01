@@ -1,5 +1,5 @@
 <?php
-namespace rtens\stache;
+namespace watoki\stache;
 
 class ParsingException extends \Exception {
 

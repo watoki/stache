@@ -1,9 +1,9 @@
 <?php
-namespace rtens\stache;
+namespace watoki\stache;
 
-use rtens\collections\Liste;
-use rtens\collections\Map;
-use rtens\collections\Set;
+use watoki\collections\Liste;
+use watoki\collections\Map;
+use watoki\collections\Set;
 
 class Renderer {
 

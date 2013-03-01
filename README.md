@@ -9,7 +9,7 @@
 To use it in your own project, add the following lines to your `composer.json`.
 
     "require" : {
-        "rtens/stache" : "*"
+        "watoki/stache" : "*"
     },
     "minimum-stability": "dev"
 
@@ -17,4 +17,4 @@ To use it in your own project, add the following lines to your `composer.json`.
 
 Check out the [testcase] for usage.
 
-[testcase]: https://github.com/rtens/stache/tree/master/spec/rtens/stache/RenderTest.php
+[testcase]: https://github.com/watoki/stache/tree/master/spec/watoki/stache/RenderTest.php

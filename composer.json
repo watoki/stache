@@ -1,8 +1,8 @@
 {
-    "name": "rtens/stache",
+    "name": "watoki/stache",
     "description": "Simple Mustache-like rendering for PHP",
     "keywords": ["template", "rendering", "watoki"],
-    "homepage": "http://github.com/rtens/stache",
+    "homepage": "http://github.com/watoki/stache",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -14,12 +14,12 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "rtens/collections": "*"
+        "watoki/collections": "*"
     },
     "autoload": {
         "psr-0": {
-            "rtens\\stache": "src/",
-            "spec\\rtens\\stache": ""
+            "watoki\\stache": "src/",
+            "spec\\watoki\\stache": ""
         }
     },
     "minimum-stability": "dev"

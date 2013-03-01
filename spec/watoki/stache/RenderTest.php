@@ -1,10 +1,10 @@
 <?php
-namespace spec\rtens\stache;
+namespace spec\watoki\stache;
 
-use rtens\collections\Liste;
-use rtens\collections\Map;
-use rtens\stache\ParsingException;
-use rtens\stache\Renderer;
+use watoki\collections\Liste;
+use watoki\collections\Map;
+use watoki\stache\ParsingException;
+use watoki\stache\Renderer;
 
 class TemplateTest extends \PHPUnit_Framework_TestCase {
 
