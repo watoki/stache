@@ -7,6 +7,8 @@ use watoki\collections\Set;
 
 class Renderer {
 
+    public static $CLASS = __CLASS__;
+
     /**
      * @var string
      */
